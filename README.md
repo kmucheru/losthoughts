@@ -1,6 +1,6 @@
 # README
 
-==============INTRODUCTION=============================
+==============INTRODUCTION======================================================
 
 This is an experimental blog engine built by rails for everyone.
 
@@ -16,7 +16,7 @@ Its stack is as follows
 
 -Blog content by voices in the creators head.
 
-==========================================================
+================================================================================
 
 Built using TDD-inspired techniques
 
@@ -34,4 +34,9 @@ Please note that the application might have integration issues when running in
   the hosting server. In line with keeping matters slim and DRY (Don't Repeat
    Yourself) Rails conventions, windows was outed.
 
-   Pleas contact the developer if this becomes an issue. Nobody ever reads this. 
+   Please contact the developer if this becomes an issue. Nobody ever reads this.
+================================================================================
+
+Bare level frame includes the fully functional blog without any styling.
+
+================================================================================
