@@ -15,8 +15,37 @@
  *= require foundation_and_overrides
 
  */
- * {
+
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
  }
+body {
+
+   font-size: 16px;
+   line-height: 1.3;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+.new-article-header{
+background-color: red;
+text-align: center;
+width: 100%;
+margin-bottom: 0.625rem;
+}
+
+.new-article-form{
+background-color: green;
+width:95%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.entry-row{
+background-color: yellow;
+margin-bottom: 0.625rem;
+}
