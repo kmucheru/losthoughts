@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
-
+ *= require trix
  */
 
 * {
@@ -48,4 +48,5 @@ align-items: center;
 .entry-row{
 background-color: yellow;
 margin-bottom: 0.625rem;
+
 }
