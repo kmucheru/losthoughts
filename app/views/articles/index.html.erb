@@ -1,9 +1,18 @@
-<h1>All	Articles</h1>
-<ul>
-		<%	@articles.each	do	|article|	%>
-				<li>
-						<%=	link_to article.title, article_path(article) %>
-				</li>
-		<%	end	%>
-</ul>
-<%=	link_to	"Create	a	New	Article",	new_article_path	%>
+
+	<div class="index-header">
+		<h2>All	Articles</h2>
+	</div>
+	<div class="index-group">
+		<ul>
+			<%	@articles.each	do	|article|	%>
+				<div class="index-article">
+						<li>
+								<h3 class="button button1"><%=	link_to article.title, article_path(article)%></h3>
+								<br/>
+								<p><%= ( article.body.slice(5..165)) %></p>
+						</li>
+				</div>
+			<%	end	%>
+		</ul>
+	</div>
+	<%=	link_to	"Create	a	New	Article",	new_article_path %>

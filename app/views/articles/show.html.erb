@@ -1,15 +1,25 @@
+<header class="index-header">
 <h1><%=	@article.title	%></h1>
+</header>
+<div class="tag-list">
 <p>
-		Tags:
+		Tagged:
 		<%	@article.tags.each	do	|tag|	%>
 				<%=	link_to	tag.name,	tag_path(tag)	%>
 		<%	end	%>
 </p>
+</div>
+<div class="article-body">
 <p><%=	raw(@article.body)	%></p>
+</div>
+<div class="comment-section"
 <h3>Comments	(<%=	@article.comments.size	%>)</h3>
 <%=	render	partial:	'articles/comment',	collection:	@article.comments.reverse	%>
 <%=	render	partial:	'comments/form'	%>
+</div>
+<div class="article-links">
 <%=	link_to	"<<	Back	to	Articles	List",	articles_path	%><br/>
 <%=	link_to	"delete",	article_path(@article),	method:	:delete, data:
 {confirm:	"Really	delete	the	article?"}	%><br/>
 <%=	link_to	"edit",	edit_article_path(@article)	%>
+</div>
