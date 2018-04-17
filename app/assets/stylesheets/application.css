@@ -54,7 +54,7 @@ flex-direction: column;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
- 
+
 
 .tag-list{
   margin-top: 5rem;
@@ -78,6 +78,9 @@ flex-direction: column;
   background-color: #FCF8F0;
 
 }
+ .index-article h3 {
+   padding-bottom: 1.5rem;
+ }
 
 .index-article li {
   margin-left: 1rem;
