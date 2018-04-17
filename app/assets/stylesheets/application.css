@@ -54,32 +54,7 @@ flex-direction: column;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
- .button {
-
-     border: none;
-     text-decoration: none;
-     padding: 1rem 2rem;
-     text-align: center;
-
-     display: inline-block;
-
-     margin: 0.25rem 0.125rem;
-     -webkit-transition-duration: 0.4s; /* Safari */
-     transition-duration: 0.4s;
-     cursor: pointer;
- }
-
- .button1 {
-     background-color: #8E958D;
-     color: black;
-     border: 0.125 solid #C92947;
-
- }
-
- .button1:hover {
-     background-color: #847974;
-     color: white;
- }
+ 
 
 .tag-list{
   margin-top: 5rem;

@@ -2,15 +2,13 @@
 <h1><%=	@article.title	%></h1>
 </header>
 <div class="tag-list">
-<p>
-		Tagged:
-		<%	@article.tags.each	do	|tag|	%>
-				<%=	link_to	tag.name,	tag_path(tag)	%>
-		<%	end	%>
-</p>
+	Tagged:
+	<%	@article.tags.each	do	|tag|	%>
+			<%=	link_to	tag.name,	tag_path(tag)	%>
+	<%	end	%>
 </div>
 <div class="article-body">
-<p><%=	raw(@article.body)	%></p>
+<%=	raw(@article.body)	%>
 </div>
 <div class="comment-section"
 <h3>Comments	(<%=	@article.comments.size	%>)</h3>

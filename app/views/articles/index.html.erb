@@ -7,9 +7,9 @@
 			<%	@articles.each	do	|article|	%>
 				<div class="index-article">
 						<li>
-								<h3 class="button button1"><%=	link_to article.title, article_path(article)%></h3>
+								<h3><%=	link_to article.title, article_path(article)%></h3>
 								<br/>
-								<p><%= ( article.body.slice(5..165)) %></p>
+								<%= ( article.body.slice(5..165)) %>
 						</li>
 				</div>
 			<%	end	%>
