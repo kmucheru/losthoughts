@@ -12,4 +12,11 @@ class Article < ApplicationRecord
   		new_or_found_tags	=	tag_names.collect	{	|name|	Tag.find_or_create_by(name:	name)	}
   		self.tags	=	new_or_found_tags
     end
+
+  def next
+    Article.where("id > ?", id).order(id: :asc).limit(1).first
+  end
+  def prev
+    Article.where("id < ?", id).order(id: :desc).limit(1).first
+  end
 end

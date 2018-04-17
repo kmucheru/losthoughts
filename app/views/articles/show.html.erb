@@ -1,5 +1,13 @@
 <header class="index-header">
+	<div class="show-group">
+		<div class="article-arrow">
+			<%= link_to "Previous", @article.prev %>
+		</div>
 	<h1><%=	@article.title	%></h1>
+		<div class="article-arrow">
+			<%= link_to "next", @article.next %>
+		</div>
+	</div>
 </header>
 <div class="tag-list">
 	Tagged:
