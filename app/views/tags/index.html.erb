@@ -1,6 +1,10 @@
-<h2>all tags</h2>
+<header class="index-header">
+<h1>All Tags</h1>
+</header>
 
+<div class="tag-list">
 <% @tags.each do |tag| %>
-  <%= link_to tag.name, tag_path(tag)  %>|
-  <%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Really delete the tag?"} %><br>
+   <%= link_to tag.name, tag_path(tag), :class => 'tag-index spacer' %>|
+   <%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Really delete the tag?"} %>
 <% end %>
+</div>

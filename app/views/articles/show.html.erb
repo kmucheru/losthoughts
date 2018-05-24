@@ -9,14 +9,18 @@
 		</div>
 	</div>
 </header>
-<div class="tag-list">
-	Tagged:
+<div class="tag-group">
+  <%=link_to 'Tags', tags_path,:class => 'article-arrow spacer' %>
+
 	<%	@article.tags.each	do	|tag|	%>
-			<%=	link_to	tag.name,	tag_path(tag)	%>
+			<%=	link_to	tag.name,	tag_path(tag),:class => 'article-arrow'	%>
 	<%	end	%>
+
 </div>
 <div class="article-body">
-	<%=	raw(@article.body)	%>
+	<article>
+		<%=	raw(@article.body)	%>
+	</article>
 </div>
 <div class="comment-section"
 	<h3>Comments	(<%=	@article.comments.size	%>)</h3>
