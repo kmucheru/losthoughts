@@ -35,6 +35,8 @@ gem 'autoprefixer-rails'
 # gem 'capistrano-rails', group: :development
 #wysiwyg editor
 gem 'trix'
+#application icons
+gem 'font-awesome-sass', '~> 5.0.13'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

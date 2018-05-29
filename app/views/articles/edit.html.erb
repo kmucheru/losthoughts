@@ -1,3 +1,6 @@
 <h1>Edit An Article </h1>
 
   <%=	render	partial:	'form'	%>
+
+  <%=	link_to	"delete",	article_path(@article),	method:	:delete, data:
+  {confirm:	"Really	delete	the	article?"}	%>

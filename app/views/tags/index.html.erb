@@ -4,7 +4,7 @@
 
 <div class="tag-list">
 <% @tags.each do |tag| %>
-   <%= link_to tag.name, tag_path(tag), :class => 'tag-index spacer' %>|
+   <%= link_to tag.name, tag_path(tag), :class => 'article-arrow' %>
    <%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Really delete the tag?"} %>
 <% end %>
 </div>
