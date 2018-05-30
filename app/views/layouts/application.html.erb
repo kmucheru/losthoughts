@@ -7,12 +7,15 @@
     <title><%= content_for?(:title) ? yield(:title) : "LosThoughts" %></title>
 
     <%= stylesheet_link_tag    "application" %>
-    
+
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <header class="main-header">
       <%= render partial: 'layouts/brandbar' %>
     </header>
     <%= yield %>

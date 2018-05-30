@@ -33,10 +33,12 @@ gem 'foundation-rails'
 gem 'autoprefixer-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-#wysiwyg editor
+# wysiwyg editor
 gem 'trix'
-#application icons
+# application icons
 gem 'font-awesome-sass', '~> 5.0.13'
+# users authentication
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
