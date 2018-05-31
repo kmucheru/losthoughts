@@ -1,15 +1,9 @@
 
 <div class="brand-bar">
-  <% if user_signed_in? %>
-           <%= link_to 'Edit profile', edit_user_registration_path %> |
-           <%= link_to "Logout", destroy_user_session_path, :method => :delete  %>
-         <% else %>
-           <%= link_to "Sign up", new_user_registration_path %> |
-           <%= link_to "Login", new_user_session_path  %>
-   <% end %>
-   
-  <h1>LosThoughts  <%=	link_to	articles_path do	%>
-    <i class="fas fa-home"></i></h1>
-  <% end %>
+
+    <h1>LosThoughts  <%=	link_to	articles_path do	%>
+      <i class="fas fa-home"></i></h1>
+    <% end %>
+
 
 </div>
