@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  before_action :verify_is_admin, :only => [:new, :edit, :create, :destroy]
+
   def index
     @articles = Article.paginate(:page => params[:page],
      :per_page => 5).order("created_at DESC")
@@ -42,6 +44,10 @@ class ArticlesController < ApplicationController
 		params.require(:article).permit(:title,	:body, :tag_list)
   end
 
+  private
+  def verify_is_admin
+  (current_user.nil?) ? redirect_to(root_path) : (redirect_to(root_path) unless current_user.admin?)
+  end
 
 
 end

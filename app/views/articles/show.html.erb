@@ -32,13 +32,22 @@
 	<%	end	%>
 
 </div>
+<% if user_signed_in? %>
 <div class="comment-section">
 	<h3>Comments	(<%=	@article.comments.size	%>)</h3>
 	<%=	render	partial:	'articles/comment',	collection:	@article.comments.reverse	%>
 	<%=	render	partial:	'comments/form'	%>
 </div>
+<% else %>
+<div class="comment-check">
+<p>please <%= link_to "Sign up", new_user_registration_path %>
+ or <%= link_to "Login", new_user_session_path %>
+to comment</p>
+</div>
+<% end %>
 <div class="article-links">
 	<%=	link_to	"All Articles",	articles_path, :class => 'article-arrow'	%>
+	<% if current_user.try(:admin?) %>
 	<%=	link_to	"edit",	edit_article_path(@article), :class => 'article-arrow'	%>
-
+	<% end %>
 </div>

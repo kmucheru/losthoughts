@@ -5,6 +5,8 @@
 <div class="tag-list">
 <% @tags.each do |tag| %>
    <%= link_to tag.name, tag_path(tag), :class => 'article-arrow' %>
+   <% if current_user.try(:admin?) %>
    <%= link_to "delete", tag_path(tag), method: :delete, data: {confirm: "Really delete the tag?"} %>
+   <% end %>
 <% end %>
 </div>
