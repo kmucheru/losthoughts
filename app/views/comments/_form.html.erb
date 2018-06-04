@@ -1,8 +1,8 @@
 <h3>Post	a	Comment</h3>
   <%=	form_for	[	@article,	@comment	]	do	|f|	%>
   		<p>
-  				<%=	f.label	:author_name	%><br/>
-  				<%=	f.text_field	:author_name	%>
+  				commenting as <%= current_user.username %><br/>
+  				<%= f.hidden_field :author_name, value: current_user.username %>
   		</p>
   		<p>
   				<%=	f.label	:body	%><br/>
