@@ -16,4 +16,6 @@
 	</ul>
 </div>
 <%= will_paginate @posts, :class => 'paginator' %><br/>
+<% if current_user.try(:admin?) %>
 <%=	link_to	"Create	a	New	Article",	new_article_path %>
+<% end %>
