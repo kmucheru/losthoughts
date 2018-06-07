@@ -8,7 +8,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 set :passenger_environment_variables, { :path => '/path-to-passenger/bin:$PATH' }
 set :passenger_restart_command, 'passenger-config restart-app'
 
-
+after 'deploy:publishing', 'deploy:restart'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
