@@ -1,12 +1,13 @@
 
 set :application, "losthoughts"
-set :repo_url, "https://bitbucket.org/kmucheru/losthoughts/src/master.git"
+set :repo_url, "git@bitbucket.org:kmucheru/losthoughts.git"
 
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 set :passenger_environment_variables, { :path => '/path-to-passenger/bin:$PATH' }
-set :passenger_restart_command, '/usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini restart-app'
+set :passenger_restart_command, 'passenger-config restart-app'
+
 
 
 # Default branch is :master
