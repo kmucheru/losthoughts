@@ -71,13 +71,53 @@ justify-content: center;
 .brand-bar h1{
   font-family: 'Amaranth', sans-serif;
 }
+.brand-bar a:link {
+    text-decoration:none;
+    color: #4d79ff;
+}
+
+.brand-bar a:visited {
+    text-decoration:none;
+    color: #4d79ff;
+}
+
+.brand-bar i:hover {
+    color: white;
+}
+
+.brand-bar a:active {
+    text-decoration:none;
+    color: #4d79ff;
+}
+
 .brand-login{
 z-index: 0;
 width: 30%;
 float: left;
+}
 
+.brand-login a:link {
+    text-decoration:none;
+    color: white;
 
 }
+
+.brand-login a:visited {
+    text-decoration:none;
+    color: #f2f2f2;
+
+}
+
+.brand-login a:hover {
+    text-decoration:underline;
+    color: #4d79ff;
+}
+
+.brand-login a:active {
+    text-decoration:none;
+
+}
+
 
 .paginator{
   font-size: 1rem;
@@ -87,7 +127,7 @@ float: left;
   padding-right: 0.3rem;
   background-color: #d9d9d9;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   display: flex;
   align-self: center;
 }
@@ -106,7 +146,6 @@ float: left;
 .paginator a:active {
     text-decoration:none;
 }
-
 
 
 .show-group{
@@ -132,53 +171,43 @@ float: left;
   padding-bottom: 0.2rem;
   padding-left: 0.4rem;
   padding-right: 0.3rem;
-  background-color: #d9d9d9;
+  background-color: #1a1a1a;
   font-weight: 700;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .article-arrow a:link {
     text-decoration:none;
+    color: white;
 }
 
 .article-arrow a:visited {
     text-decoration:none;
+    color: #f2f2f2;
 }
 
 .article-arrow a:hover {
-    text-decoration:none;
+    text-decoration:underline;
+    color: #4d79ff;
 }
 
 .article-arrow a:active {
     text-decoration:none;
 }
 
-.tag-group a:link {
-    text-decoration:none;
-}
-
-.tag-group a:visited {
-    text-decoration:none;
-}
-
-.tag-group a:hover {
-    text-decoration:none;
-}
-
-.tag-group a:active {
-    text-decoration:none;
-}
-
 .article-links a:link {
     text-decoration:none;
+    color: white;
 }
 
 .article-links a:visited {
     text-decoration:none;
+    color: #f2f2f2;
 }
 
 .article-links a:hover {
     text-decoration:none;
+    color: #4d79ff;
 }
 
 .article-links a:active {
@@ -187,14 +216,17 @@ float: left;
 
 .tag-list a:link {
     text-decoration:none;
+    color: white;
 }
 
 .tag-list a:visited {
     text-decoration:none;
+    color: #f2f2f2;
 }
 
 .tag-list a:hover {
     text-decoration:none;
+    color: #4d79ff;
 }
 
 .tag-list a:active {
@@ -235,12 +267,32 @@ float: left;
 }
 
 .tag-group{
-
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
+.tag-group a:link {
+    text-decoration:none;
+    color: white;
+}
+
+.tag-group a:visited {
+    text-decoration:none;
+    color: #f2f2f2;
+}
+
+.tag-group a:hover {
+    text-decoration:none;
+    color: #4d79ff;
+}
+
+.tag-group a:active {
+    text-decoration:none;
+}
+
+
 .tag-list{
   margin-top: 4rem;
   display: flex;
@@ -277,13 +329,13 @@ float: left;
   background-color: #f2f2f2;
   margin-left: 1.2rem;
   margin-right: 1.2rem;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 69ch;
   font-family: 'Gentium Basic', serif;
 }
  .index-article h3 {
-   padding-bottom: 1.5rem;
+   padding-bottom: 1rem;
  }
 
 .index-article li {
@@ -292,6 +344,24 @@ float: left;
   padding-bottom: 1.25rem;
   max-width: 75ch;
 }
+
+.index-article a:link {
+    text-decoration:none;
+}
+
+.index-article a:visited {
+    text-decoration:none;
+}
+
+.index-article a:hover {
+    text-decoration:none;
+}
+
+.index-article a:active {
+    text-decoration:none;
+}
+
+
 .index-group{
   margin-top: 3.2rem;
   margin-bottom: 1rem;
@@ -299,8 +369,6 @@ float: left;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .new-article-header{
 background-color: red;
@@ -342,18 +410,22 @@ margin-bottom: 0.625rem;
   display: flex;
   justify-content: center;
 
+
 }
 
 .tag-show a:link {
     text-decoration:none;
+    color: white;
 }
 
 .tag-show a:visited {
     text-decoration:none;
+    color: #f2f2f2;
 }
 
 .tag-show a:hover {
     text-decoration:none;
+    color: #4d79ff;
 }
 
 .tag-show a:active {

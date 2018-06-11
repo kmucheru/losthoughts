@@ -9,13 +9,15 @@
 					<li>
 							<h3><%=	link_to article.title, article_path(article)%></h3>
 
-							<%= ( article.body.slice(5..165)) %>
+							<%= ( article.body.slice(5..165)) %>...
 					</li>
 			</div>
 		<%	end	%>
 	</ul>
 </div>
-<%= will_paginate @posts, :class => 'paginator' %><br/>
+
+<%= will_paginate @posts, :class => 'paginator' %>
+
 <% if current_user.try(:admin?) %>
 <%=	link_to	"Create	a	New	Article",	new_article_path %>
 <% end %>
