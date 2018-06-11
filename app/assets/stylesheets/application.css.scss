@@ -68,10 +68,15 @@ display: flex;
 justify-content: center;
 }
 
+.brand-bar h1{
+  font-family: 'Amaranth', sans-serif;
+}
 .brand-login{
 z-index: 0;
 width: 30%;
 float: left;
+
+
 }
 
 .paginator{
@@ -129,6 +134,7 @@ float: left;
   padding-right: 0.3rem;
   background-color: #d9d9d9;
   font-weight: 700;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .article-arrow a:link {
@@ -209,6 +215,7 @@ float: left;
 .article-body{
   background-color: #f2f2f2;
   max-width: 75ch;
+  line-height: 1.618rem;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -219,6 +226,8 @@ float: left;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
   margin-top: 5.4rem;
+  font-family: 'Gentium Basic', serif;
+  font-size: 1.1rem;
 
 }
 .spacer{
@@ -260,8 +269,9 @@ float: left;
   width: 100%;
   opacity: 0.8;
 }
-.index-header h2 {
+.index-header h2,h1 {
   font-size: 1.3rem;
+  font-family: 'Amaranth', sans-serif;
 }
 .index-article{
   background-color: #f2f2f2;
@@ -269,8 +279,6 @@ float: left;
   margin-right: 1.2rem;
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
-
-
 }
  .index-article h3 {
    padding-bottom: 1.5rem;
