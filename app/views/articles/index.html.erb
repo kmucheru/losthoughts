@@ -11,6 +11,11 @@
 
 							<%= ( article.body.slice(5..165)) %>...
 					</li>
+
+					<strong>posted on:</strong> <%= article.created_at.strftime("%Y")  %>
+					<strong> day_</strong>
+      <%= article.created_at.strftime("%j")  %>
+
 			</div>
 		<%	end	%>
 	</ul>
